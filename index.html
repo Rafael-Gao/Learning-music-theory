@@ -50,6 +50,7 @@
             display: flex;
             justify-content: center;
             gap: 30px;
+            flex-wrap: wrap; /* 添加响应式换行 */
         }
 
         .nav-item a {
@@ -59,6 +60,7 @@
             padding: 10px 20px;
             border-radius: 5px;
             transition: all 0.3s ease;
+            display: inline-block;
         }
 
         .nav-item a:hover {
@@ -79,6 +81,9 @@
         <ul class="nav-list">
             <li class="nav-item">
                 <a href="solfeggio.html">唱名练习</a>
+            </li>
+            <li class="nav-item">
+                <a href="whiteKeyPractice.html">音序练习</a>
             </li>
             <!-- 可以继续添加其他导航项 -->
         </ul>

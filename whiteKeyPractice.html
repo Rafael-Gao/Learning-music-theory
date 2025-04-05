@@ -222,8 +222,7 @@
                 this.classList.add('active');
                 const note = this.dataset.note;
                 
-                // 音频播放（需要时取消注释）
-                // new Audio(`sounds/${note}.mp3`).play().catch(() => {});
+                new Audio(`sounds/${note}.mp3`).play().catch(() => {});
                 
                 userInput.push(note);
                 
@@ -282,7 +281,7 @@
                 if (!key) continue;
 
                 key.classList.add('highlight');
-                new Audio(`/sounds/${note}.mp3`).play().catch(() => {});
+                new Audio(`sounds/${note}.mp3`).play().catch(() => {});
                 
                 await new Promise(resolve => setTimeout(resolve, 800));
                 key.classList.remove('highlight');
